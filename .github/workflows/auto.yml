@@ -5,6 +5,10 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+# This block grants the GITHUB_TOKEN write access to push changes
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
